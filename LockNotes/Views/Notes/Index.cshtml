@@ -1,0 +1,27 @@
+﻿@model List<LockNotes.Models.Note>
+
+<h1>LockNotes 📝</h1>
+
+<form method="post" action="/Notes/Add" style="margin-bottom:20px;">
+    <label>Title:</label><br />
+    <input type="text" name="title" /><br /><br />
+    <label>Content:</label><br />
+    <textarea name="content"></textarea><br /><br />
+    <button type="submit">Add Note</button>
+</form>
+
+@if (Model.Count == 0)
+{
+    <p><em>No notes yet. Add one above!</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var note in Model)
+        {
+            <li>
+                <strong>@note.Title</strong>: @note.Content
+            </li>
+        }
+    </ul>
+}

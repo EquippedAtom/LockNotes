@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ben\\source\\repos\\LockNotes\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|c:\\users\\ben\\source\\repos\\locknotes\\locknotes\\views\\notes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|solutionrelative:locknotes\\views\\notes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|c:\\users\\ben\\source\\repos\\locknotes\\locknotes\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|solutionrelative:locknotes\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|c:\\users\\ben\\source\\repos\\locknotes\\locknotes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|solutionrelative:locknotes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|c:\\users\\ben\\source\\repos\\locknotes\\locknotes\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|solutionrelative:locknotes\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|c:\\users\\ben\\source\\repos\\locknotes\\locknotes\\locknotes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3F75C8A0-61A5-4A88-BF86-A721B6A14BD4}|LockNotes\\LockNotes.csproj|solutionrelative:locknotes\\locknotes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Views\\Notes\\Index.cshtml",
+              "RelativeDocumentMoniker": "LockNotes\\Views\\Notes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Views\\Notes\\Index.cshtml",
+              "RelativeToolTip": "LockNotes\\Views\\Notes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T21:49:05.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Controllers\\NotesController.cs",
+              "RelativeDocumentMoniker": "LockNotes\\Controllers\\NotesController.cs",
+              "ToolTip": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Controllers\\NotesController.cs",
+              "RelativeToolTip": "LockNotes\\Controllers\\NotesController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T21:44:23.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LockNotes\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LockNotes\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T21:32:57.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Program.cs",
+              "RelativeDocumentMoniker": "LockNotes\\Program.cs",
+              "ToolTip": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\Program.cs",
+              "RelativeToolTip": "LockNotes\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T21:30:09.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LockNotes.csproj",
+              "DocumentMoniker": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\LockNotes.csproj",
+              "RelativeDocumentMoniker": "LockNotes\\LockNotes.csproj",
+              "ToolTip": "C:\\Users\\ben\\source\\repos\\LockNotes\\LockNotes\\LockNotes.csproj",
+              "RelativeToolTip": "LockNotes\\LockNotes.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-28T21:55:19.883Z",
+              "EditorCaption": ""
             }
           ]
         }
