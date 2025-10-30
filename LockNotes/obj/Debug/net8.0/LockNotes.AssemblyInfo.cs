@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LockNotes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+623c1fb3c56891ac56f5207acfd18d8f89862408")]
 [assembly: System.Reflection.AssemblyProductAttribute("LockNotes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LockNotes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
