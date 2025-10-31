@@ -1,27 +1,134 @@
-﻿@model List<LockNotes.Models.Note>
-
-<h1>LockNotes 📝</h1>
-
-<form method="post" action="/Notes/Add" style="margin-bottom:20px;">
-    <label>Title:</label><br />
-    <input type="text" name="title" /><br /><br />
-    <label>Content:</label><br />
-    <textarea name="content"></textarea><br /><br />
-    <button type="submit">Add Note</button>
-</form>
-
-@if (Model.Count == 0)
-{
-    <p><em>No notes yet. Add one above!</em></p>
+﻿@{
+    ViewData["Title"] = "My Notes";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
-else
-{
-    <ul>
-        @foreach (var note in Model)
-        {
-            <li>
-                <strong>@note.Title</strong>: @note.Content
-            </li>
-        }
-    </ul>
-}
+
+@model List<LockNotes.Models.Note>
+
+<div class="container py-4">
+    <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="fw-bold" style="color: #4B0082;">My Notes</h1>
+            <button type="button" class="btn" style="background-color:#4B0082; color:white;" data-bs-toggle="modal" data-bs-target="#addNoteModal">
+                <i class="bi bi-plus-lg"></i> Add Note
+            </button>
+        </div>
+
+
+    </div>
+
+    @if (Model.Count == 0)
+    {
+        <p class="text-muted text-center">No notes yet — click <strong>Add Note</strong> to create one!</p>
+    }
+    else
+    {
+        <div class="row g-3">
+            @foreach (var note in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 border-0" style="background-color:#fafafa;">
+                        <div class="card-body">
+                            <h5 class="card-title">@note.Title</h5>
+                            <p class="card-text text-muted">@note.Content</p>
+
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-sm btn-outline-secondary edit-btn"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#editNoteModal"
+                                        data-id="@note.Id"
+                                        data-title="@note.Title"
+                                        data-content="@note.Content">
+                                    Edit
+                                </button>
+
+
+
+                                <form method="post" action="/Notes/Delete" class="d-inline">
+                                    <input type="hidden" name="id" value="@note.Id" />
+                                    <button class="btn btn-sm btn-outline-danger">Delete</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Edit Note Modal -->
+                <div class="modal fade" id="editNoteModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form method="post" action="/Notes/Edit">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Edit Note</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="hidden" name="id" id="editNoteId" />
+                                    <div class="mb-3">
+                                        <label>Title</label>
+                                        <input type="text" class="form-control" name="title" id="editNoteTitle" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Content</label>
+                                        <textarea class="form-control" name="content" id="editNoteContent"></textarea>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+    }
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addNoteModal" tabindex="-1" aria-labelledby="addNoteLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="/Notes/Add">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addNoteLabel">Add a New Note</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Content</label>
+                        <textarea name="content" class="form-control" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Add Note</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    const editModal = document.getElementById('editNoteModal');
+    editModal.addEventListener('show.bs.modal', function (event) {
+      const button = event.relatedTarget; // Button that triggered the modal
+      const noteId = button.getAttribute('data-id');
+      const noteTitle = button.getAttribute('data-title');
+      const noteContent = button.getAttribute('data-content');
+
+      // Populate the modal fields
+      document.getElementById('editNoteId').value = noteId;
+      document.getElementById('editNoteTitle').value = noteTitle;
+      document.getElementById('editNoteContent').value = noteContent;
+    });
+</script>
+

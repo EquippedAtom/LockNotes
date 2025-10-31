@@ -1,4 +1,11 @@
+using LockNotes.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<LockNotesContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("LockNotesConnection")));
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();

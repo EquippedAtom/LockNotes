@@ -1,10 +1,56 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "LockNotes – Your secure space for private notes";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to LockNotes</h1>
-    <p>your secure online notebook, powered by ASP.NET Core</a>.</p>
+<div class="container text-center py-5">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-3 text-purple">Welcome to LockNotes</h1>
+            <p class="lead text-muted mb-4">
+                Keep your thoughts, ideas, and to-dos safe and encrypted in your personal cloud notebook.
+            </p>
+            <a href="/Notes" class="btn btn-lg btn-primary me-2">Try LockNotes</a>
+            <button class="btn btn-lg btn-outline-secondary">Learn More</button>
+        </div>
+    </div>
 </div>
+
+<section class="py-5 bg-light mt-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Why LockNotes?</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple fw-bold">🔒 Secure by Design</h5>
+                        <p class="card-text text-muted">
+                            Built with privacy in mind — your notes stay encrypted and private.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple fw-bold">☁️ Always Accessible</h5>
+                        <p class="card-text text-muted">
+                            Access your notes anywhere, on any device. Cloud-backed, fast, and reliable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-purple fw-bold">🧠 Simple & Smart</h5>
+                        <p class="card-text text-muted">
+                            Clean, intuitive interface — no clutter, just focus on what matters.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
